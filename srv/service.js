@@ -9,7 +9,7 @@ module.exports = function () {
         const ID = req.data.order
         let order = await SELECT (Orders, ID)
         if (!order) return req.error (404,`Order ${order} doesn't exist`)
-        await UPDATE (Orders, ID) .with ({ purchased: true })
+        await UPDATE (Orders, ID) .with ({ purchased: true, date: new Date() })
         return await SELECT (Orders, ID)
     })
 }
