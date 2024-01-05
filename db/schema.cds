@@ -2,43 +2,26 @@ namespace OrderManagement;
 
 using
 {
-    Country,
     Currency,
-    Language,
-    User,
-    cuid,
-    extensible,
-    managed,
-    temporal
+    cuid
 }
 from '@sap/cds/common';
 
-entity Orders
+entity Orders : cuid
 {
-    key ID : UUID;
-    customer_id : String(100);
+    customer : String(100);
     date : Date;
-    status : String(100);
-    total : String(100);
-    orderItems : Association to one OrderItems;
+    purchased : Boolean;
+    price : Decimal;
+    currency : Currency;
+    orderItems : Composition of many OrderItems on orderItems.order = $self;
 }
 
-entity OrderItems
+entity OrderItems : cuid
 {
-    key ID : UUID;
-    key order_id : String(100);
-    item_id : String(100);
+    product : String(100);
     quantity : Integer;
-    price : Double;
-    orders : Composition of many Orders on orders.orderItems = $self;
-    items : Association to one Items;
-}
-
-entity Items
-{
-    key ID : UUID;
-    item_name : String(100);
-    price : String(100);
-    vendor : String(100);
-    orderItems : Composition of many OrderItems on orderItems.items = $self;
+    price : Decimal;
+    currency: Currency;
+    order : Association to one Orders;
 }
