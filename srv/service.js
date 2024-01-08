@@ -16,8 +16,8 @@ module.exports = function () {
     this.on("purchaseOrderItems", async req => {
         const ID = req.data.order
         const ItemID = req.data.item
-        let items = await SELECT (Orders, ID)
-        if (!items) return req.error (404,`Items ${ID} doesn't exist`)
+        // let items = await SELECT (Orders, ID)
+        // if (!items) return req.error (404,`Items ${ID} doesn't exist`)
         return await SELECT(OrderItems, ID, ItemID)
     })
 }
