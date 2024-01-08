@@ -6,5 +6,5 @@ service OrderManagementService {
     entity OrderItems as projection on my.OrderItems;
 
     action purchaseOrder ( order: Orders:ID ) returns Orders;
-    action purchaseOrderItems (order: Orders:ID, orderItems:OrderItems:ID) returns OrderItems;
+    action purchaseOrderItems (order: Orders:ID, item: OrderItems:ID) returns OrderItems;
 }
