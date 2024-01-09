@@ -1,0 +1,37 @@
+### Fetch All Orders
+GET http://localhost:4004/service/OrderManagement/Orders
+
+### CREATE Order
+POST http://localhost:4004/service/OrderManagement/Orders HTTP/1.1
+Content-Type: application/json
+
+{
+    "customer" : "Deloitte",
+    "date": null,
+    "purchased": false,
+    "price" : 200,
+    "currency_code" : "USD"
+}
+
+### UPDATE Existing Order
+PATCH http://localhost:4004/service/OrderManagement/Orders/77fef309-bbc4-4f92-9a98-cd2dfd6bb180 HTTP/1.1
+Content-Type: application/json
+
+{
+    "customer" : "Colgate",
+    "date": null,
+    "purchased": false,
+    "price" : 250,
+    "currency_code" : "EUR"
+}
+
+### DELETE Existing Order
+DELETE http://localhost:4004/service/OrderManagement/Orders/77fef309-bbc4-4f92-9a98-cd2dfd6bb180 HTTP/1.1
+
+## purchaseOrder Action - works
+POST http://localhost:4004/service/OrderManagement/purchaseOrder
+Content-Type: application/json
+
+{
+    "order": "6c25e827-15c2-4e7f-be1a-89fb4304d4fa"
+}
