@@ -1,15 +1,8 @@
-_schema-version: "3.1"
-ID: ordersCAPApp
-description: OrderManagement CAP application that accepts input from SAP Build Process Automation
-version: 1.0.0
-modules:
+---
+applications:
 - name: ordersCAPApp
-  type: html5
-  parameters:
-    buildpack: nodejs_buildpack
-  build-parameters:
-    builder: custom
-    commands:
-    - npm install
-    - npm run build
-
+  description: OrderManagement CAP application that accepts input from SAP Build Process Automation
+  version: 1.0.0
+  memory: 512MB
+  disk_quota: 512MB
+  buildpack: nodejs_buildpack
