@@ -1,2 +1,2 @@
-ID,customer,date,purchased,price,currency_code
-6c25e827-15c2-4e7f-be1a-89fb4304d4fa,001,null,false,2000,USD
+ID,customer,date,status,price,currency_code
+6c25e827-15c2-4e7f-be1a-89fb4304d4fa,001,null,"Initiated",2000,USD
