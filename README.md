@@ -15,11 +15,21 @@ File or Folder | Purpose
 
 ## Next Steps
 
-- Open a new terminal and run `cds watch` 
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+- Using terminal, clone the repo and `cd` into the folder
+- Run the following commands
+  - `cds build`
+  - `cds watch`
+- Access https://localhost:4004 to see data for "Orders" and "OrderItems"
 
+## Test Steps
 
+- The services should be running at https://localhost:4004 (or any other available port)
+- From VS Code, Install "REST Client for Visual Studio Code"
+- Go to the `OrderManagement > test` folder
+- Access either test-orders.http or test-orderitems.http
+- Click 'Send Request' link to do CRUD operations on orders and orderitems respectively
+  - Note: change Order IDs or OrderItem IDs as required
+  
 ## Learn More
 
 Learn more at https://cap.cloud.sap/docs/get-started/.
