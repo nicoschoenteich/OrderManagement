@@ -2,7 +2,6 @@
 const cds = require('@sap/cds')
 
 module.exports = function () {
-
     const { Orders } = cds.entities("OrderManagement")
 
     this.on("purchaseOrder", async req => {

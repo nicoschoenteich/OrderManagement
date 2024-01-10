@@ -1,6 +1,0 @@
-POST http://localhost:4004/service/OrderManagement/purchaseOrder
-Content-Type: application/json
-
-{
-    "order": "6c25e827-15c2-4e7f-be1a-89fb4304d4fa"
-}
