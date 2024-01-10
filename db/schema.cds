@@ -21,6 +21,7 @@ entity OrderItems : cuid
 {
     product : String(100);
     quantity : Integer;
+    total: Decimal;
     price : Decimal;
     currency: Currency;
     order : Association to one Orders;

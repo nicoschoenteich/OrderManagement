@@ -1,0 +1,8 @@
+---
+applications:
+- name: ordersCAPApp
+  description: OrderManagement CAP application that accepts input from SAP Build Process Automation
+  version: 1.0.0
+  memory: 512MB
+  disk_quota: 512MB
+  buildpack: nodejs_buildpack
