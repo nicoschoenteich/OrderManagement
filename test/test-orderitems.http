@@ -9,6 +9,7 @@ Content-Type: application/json
     "product" : "iPod",
     "quantity" : 2,
     "price" : 300,
+    "total": 600,
     "currency_code": "USD"
 }
 
@@ -20,6 +21,7 @@ Content-Type: application/json
     "product" : "iPod",
     "quantity" : 3,
     "price" : 450,
+    "total": 1350,
     "currency_code": "EUR"
 }
 
