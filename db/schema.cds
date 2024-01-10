@@ -11,7 +11,7 @@ entity Orders : cuid
 {
     customer : String(100);
     date : Date;
-    purchased : Boolean;
+    status : String(100);
     price : Decimal;
     currency : Currency;
     orderItems : Composition of many OrderItems on orderItems.order = $self;

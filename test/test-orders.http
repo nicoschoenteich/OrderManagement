@@ -8,7 +8,7 @@ Content-Type: application/json
 {
     "customer" : "Deloitte",
     "date": null,
-    "purchased": false,
+    "status": "Requested",
     "price" : 200,
     "currency_code" : "USD"
 }
@@ -20,7 +20,7 @@ Content-Type: application/json
 {
     "customer" : "Colgate",
     "date": null,
-    "purchased": false,
+    "status": "Approved",
     "price" : 250,
     "currency_code" : "EUR"
 }

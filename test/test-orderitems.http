@@ -13,7 +13,7 @@ Content-Type: application/json
 }
 
 ### UPDATE Existing OrderItem
-PATCH http://localhost:4004/service/OrderManagement/OrderItems/4d1e5cfc-43a2-4f76-94e3-e5c12e1ea728 HTTP/1.1
+PATCH http://localhost:4004/service/OrderManagement/OrderItems/4bc4098e-f28e-4631-bb1d-4e36e1fe5378 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -24,4 +24,4 @@ Content-Type: application/json
 }
 
 ### DELETE OrderItem
-DELETE http://localhost:4004/service/OrderManagement/OrderItems/4d1e5cfc-43a2-4f76-94e3-e5c12e1ea728 HTTP/1.1
+DELETE http://localhost:4004/service/OrderManagement/OrderItems/4bc4098e-f28e-4631-bb1d-4e36e1fe5378 HTTP/1.1
