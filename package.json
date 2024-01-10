@@ -26,18 +26,7 @@
     },
     "cds": {
         "requires": {
-            "[production]": {
-                "db": "hana"
-            },
-            "app-service": {
-                "impl": "@sap/low-code-event-handler"
-            },
-            "auth": {
-                "kind": "basic"
-            }
-        },
-        "features": {
-            "fetch_csrf": true
+          "auth": "dummy"
         }
     },
     "lcap": true
