@@ -9,7 +9,7 @@ Content-Type: application/json
     "customer" : "Deloitte",
     "date": null,
     "status": "Requested",
-    "price" : 200,
+    "total" : 200,
     "currency_code" : "USD"
 }
 
@@ -21,14 +21,14 @@ Content-Type: application/json
     "customer" : "Colgate",
     "date": null,
     "status": "Approved",
-    "price" : 250,
+    "total" : 250,
     "currency_code" : "EUR"
 }
 
 ### DELETE Existing Order
 DELETE http://localhost:4004/service/OrderManagement/Orders/77fef309-bbc4-4f92-9a98-cd2dfd6bb180 HTTP/1.1
 
-## purchaseOrder Action - works
+### purchaseOrder Action - works
 POST http://localhost:4004/service/OrderManagement/purchaseOrder
 Content-Type: application/json
 
