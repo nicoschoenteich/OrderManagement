@@ -12,7 +12,7 @@ entity Orders : cuid
     customer : String(100);
     date : Date;
     status : String(100);
-    price : Decimal;
+    total : Decimal;
     currency : Currency;
     orderItems : Composition of many OrderItems on orderItems.order = $self;
 }
